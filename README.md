@@ -12,6 +12,5 @@ cd Cryptocat
 chmod +x nc.sh
 ```
 ```
-```
 bash nc.sh
 ```
