@@ -33,7 +33,7 @@ reverseShell() {
     printf "\nDo You Open Revershell Shell Here? [y/n]\n"
     read -p ">> " ans 
     if [[ $ans =~ ^[yY]$ ]]; then
-    clear nc -lnvp ${port}
+    clear; nc -lnvp ${port}
     elif [[ $ans =~ ^[nN]$ ]]; then
     printf "\nThanks For Using Man Shell"
     exit 2;
